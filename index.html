@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/4b56def079.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    
+  <div id="preloader"></div>
+
+   <section class="navigasi">
+        <!-- logo -->
+        <a class="navbar-brand" href="">Wakaf</a>
+
+        <nav>
+            <ul>
+                <li><a href="" >home</a></li>
+                <li><a href="" id="zakat" onclick="replicateZakat()">Zakat</a></li>
+                <li><a href="" id="infaq" onclick="replicateinfaq()">Infaq</a></li>
+                <li><a href="" id="Sedekah" onclick="replicateTab()">Sedekah</a></li>
+                <p id="Sedekah" style="color: black;"></p>
+            </ul>
+        </nav>
+    <div class="topnav">
+        <i class="fa-solid fa-user"></i>
+         <a class="open-button" style="cursor: pointer;" onclick="openForm()">Masuk</a>
+       
+         <!-- <button class="open-button" onclick="openForm()">Open Form</button> -->
+
+
+    </div>
+
+    <div class="form-popup" id="myForm">
+      <form style="align-items: center;justify-content: center;"  action="/action_page.php" class="form-container">
+        <h1 >Login</h1>
+    
+        <label for="email" id="email-field"><b>Email</b></label><br>
+        <input type="text" placeholder="Enter Email" name="email" required><BR> 
+    
+        <label for="psw"><b>Password</b></label><br>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+        
+    
+        <button type="submit" class="btn" id="login-form-submit">Login</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+
+      
+      </form>
+    </div>
+    
+    <iframe hidden width="560" height="315" src="https://www.youtube.com/embed/-k9qDxyxS3s?controls=0" title="YouTube video player" frameborder="0" allow=" autoplay1; "></iframe>
+  </section>
+
+    <section id="container-atas">
+            <div class="row">
+                <!-- kolom1 -->
+                <div class="col-1">
+                    <h1>Wakaf</h1>
+                    <article>
+                    <p>Mulai tabungan akhirat dengan Amal Jariah anda. Melalui wakf untuk pembangunan masjid dan pembangunan sekolah</p>                                                                                                                                                                                                                                                            <br>
+                    </article>
+                    <img src="asset/Wakaf.png" alt="">
+                </div> 
+        
+        
+                <!-- kolom2 -->
+                <div class="col-2" style="text-align: left;padding: 30px;">
+                    <br>
+                <h2>Ayo Mulai Wakaf</h2>
+                <br>
+                <label for=""> Type wakaf</label>
+                <form action="sum">
+                    <select id="sum" name="">
+                      
+                     <option hidden style="border-radius: 10px;">silahkan pilih type wakaf</option>
+                      <script language="javascript" type="text/javascript"> 
+                        const Tywakaf = ["Diam", "Bergerak"]
+                          for (var i =0; i<Tywakaf.length; i++){
+                            document.write("<Option>"+Tywakaf[i]+"</option>")
+                                        window.setTimeout(5000);
+                            }
+                              
+
+                      </script>
+
+
+                    </select>
+                  </form>
+                  <br>
+
+                  <label for=""> Jenis Wakaf</label>
+                  <form action="sum2">
+                      <select id="sum2" name="">
+                        <option hidden style="border-radius: 10px; width: 80%;";>silahkan pilih jenis wakaf</option>
+                      <script language="javascript" type="text/javascript"> 
+                        const Tyswakaf = ["uang tunai", "Saham", "Surat Berharrga", "Logam Mulia"]
+                          for (var i =0; i<Tyswakaf.length; i++){
+                            document.write("<Option>"+Tyswakaf[i]+"</option>")}
+
+                      </script>
+
+                      </select>
+                      <br>
+                    </form>
+                    <br>
+                    <label for="sum"> type wakaf</label>
+                    <input type="number" name="" id="sum" pattern="[0-9]" value="" data-type="currency" placeholder="Rp10.000.00">
+                    <br>
+                    <br>
+                    <button id="but" type="button" onclick="alert('Alhamdulillah Semoga barokah')" style="background: wheat;border-radius: 10px; padding:10px;align-content: center ;">Submit</button>
+
+                  </div> 
+            </div>
+    </section>
+
+
+
+    <section class="bolo">
+        <div class="row2">
+          <div class="column">
+            <div class="image_icon">
+              <img src="asset/icon2.gif" alt="arctichare">
+            </div>
+            <div class="caption">
+              <h3>35.169.222</h3>
+              <p>Info 1</p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="image_icon">
+              <img src="asset/icon1.gif" alt="airplane">
+            </div>
+            <div class="caption">
+              <h3>Rp.750.000.500</h3>
+              <p>Penghimpunan</p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="image_icon">
+              <img src="asset/icon3.svg" alt="baboon">
+            </div>
+            <div class="caption">
+              <h3>Rp.740.000.109</h3>
+              <p>Penyaluran</p>
+            </div>
+          </div> 
+           <div class="column">
+            <div class="image_icon">
+              <img src="asset/icon.svg" alt="baboon">
+            </div>
+            <div class="caption">
+              <h3>500</h3>
+              <p>donatur</p>
+            </div>
+          </div>
+        </section>
+
+
+        <section class="mid-only">
+          <h2>Program wakaf</h2>
+          <div class="row-tengah">
+              <div class="column2">
+                <img src="asset/berita1.jpg" alt="Snow" style="width:100%">
+                <p>ini contoh </p>
+                <p>ini contoh </p>
+              </div>
+              <div class="column2">
+                <img src="asset/berita1.jpg" alt="Forest" style="width:100%">
+                <p>ini contoh </p>
+                <p>ini contoh </p>
+              </div>
+              <div class="column2">
+                <img src="asset/berita1.jpg" alt="Mountains" style="width:100%">
+                <p>ini contoh </p>
+                <p>ini contoh </p>
+              </div>
+            </div>
+      </section>
+
+        <div class="footer-container">
+          <div class="column-foter">
+            <h4 style="text-align: center;">Al-Manar</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis blanditiis error, ipsam animi corporis necessitatibus molestias vel. Adipisci, quas cumque?.</p>
+
+          </div>
+          <div class="column-foter">
+            <h4>Alamat</h4>
+                <p>
+                    Sekertariat: <br>
+                    Jalan Babatan Pilang 2/56 Wiyung <br>
+                    Kota Surabaya <br>\
+                    TelP/hp: 08132412345
+                </p>
+
+
+            </div>
+          <div class="column-foter">
+            <h4>Learn More</h4>
+            <a href="http://">Tentang</a>
+            <a href="http://">Term and Condition</a>
+            <a href="http://">kebijakan Prifasi</a>
+            <a href="http://">Kebijakan Refund</a>
+            <a href="http://">News</a>
+
+
+          </div>
+          <div class="column-sos">
+            <h4>jangan lupa follow</h4>
+            <br>
+
+            <a href="http://www.facebook.com/fariduta" target="_blank" ><i class="fab fa-facebook-f"></i></a> 
+            <a href="https://steamcommunity.com/id/fariduta/" target="_blank"><i class="fab fa-steam"></i></a> 
+          </div>
+        </div>
+        <p id="cp">Copyright @ paddlepopa/ Fariduta/ 1204215118</p>
+      
+      
+
+<script>
+
+  // script for loading 
+  var loader = document.getElementById("preloader");
+  window.addEventListener("load", function(){
+    loader.style.display = "none"
+  })
+
+  //script link 
+
+
+  //zakat
+    var zakat= document.URL;
+      document.getElementById("zakat").innerHTML = "halaman zakat" + str;
+      function replicateZakat(){
+        //  if(window.confirm("Untuk Keterangan lebih lanjut anda akan diarahkan ke halaman berikut ini  ?")){
+        //     window.open(url);
+        //  }
+        console.log("ini akan menjuju ke halaman zakat!");
+      }
+    
+      //infaq
+      var infaq= document.URL;
+document.getElementById("infaq").innerHTML = "" + str; //code farid
+function replicateinfaq(){ if(window.confirm("Untuk Keterangan lebih lanjut anda akan diarahkan ke halaman penjelasan infaq ?")){ window.open(url);}
+}
+      
+      // SEDEKAH
+var sedekah =() =>
+document.getElementById("Sedekah").innerHTML = "" + str;
+function replicateTab(){
+if(window.confirm("Untuk Keterangan lebih lanjut anda akan diarahkan ke halaman penjelasan Sedekah ?")){
+window.open(url);}}
+          
+
+
+
+
+
+      //login
+      function openForm() {
+          document.getElementById("myForm").style.display = "block";
+          document.body.style.overflow = "hidden";
+        }
+
+        function closeForm() {
+        document.getElementById("myForm").style.display = "none";
+        document.body.style.overflow = "visible"; //menampilkan scroll kembali ketika klik close
+
+} 
+
+
+
+
+</script>
+
+</script>
+    
+</body>
+
+</html>
